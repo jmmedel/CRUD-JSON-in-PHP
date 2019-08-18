@@ -1,8 +1,12 @@
 [
     {
         "id": 1,
-        "name": "kagaya john",
+        "name": "bucky  the new boston",
         "post": "Hello world"
+    },
+    {
+        "id": 3,
+        "name": "john",
+        "post": "posts3"
     }
-    
 ]
