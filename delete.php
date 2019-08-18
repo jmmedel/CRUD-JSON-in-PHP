@@ -1,0 +1,33 @@
+
+<?php
+
+//file json 
+$file = "main.json";
+
+//get file json
+
+$mainjson = file_get_contents($file);
+
+//decode 
+$data = json_decode($mainjson,true);
+
+// loop 
+
+foreach($data as $key =>$d){
+
+    //get the id 
+    if($d['id'] === 2) {
+
+       array_splice($data,$key,1);
+
+    }
+
+}
+
+
+//encode 
+$jsonfile = json_encode($data,JSON_PRETTY_PRINT);
+
+//save
+$save = file_put_contents($file,$jsonfile);
+

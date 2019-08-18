@@ -19,4 +19,4 @@ $data [] = array(
 $jsonfile = json_encode($data, JSON_PRETTY_PRINT);
 
 // save
-$anggota = file_put_contents($file, $jsonfile);
+$save = file_put_contents($file, $jsonfile);
