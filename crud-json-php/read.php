@@ -3,10 +3,10 @@
 $file = "main.json";
 
 // get file json
-$anggota = file_get_contents($file);
+$mainjson = file_get_contents($file);
 
 // decode 
-$data = json_decode($anggota, true);
+$data = json_decode($mainjson, true);
 
 // foreach to echo all the data
 foreach ($data as $d) {
